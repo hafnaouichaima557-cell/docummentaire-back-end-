@@ -24,33 +24,46 @@ Before installing the project, make sure you have the following installed:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-project.git
-cd your-project
+git clone https://github.com/hafnaouichaima557-cell/docummentaire-back-end-.git
+cd docummentaire-back-end-
+```
 2. Install dependencies
+```bash
 composer install
+```
 3. Create environment file
+```bash
 cp .env.example .env
+```
 4. Generate application key
+```bash
 php artisan key:generate
+```
 5. Configure database
 
 Open .env file and update:
-
+```bash
 DB_DATABASE=your_database
 DB_USERNAME=root
 DB_PASSWORD=
+```
 6. Run migrations
+```bash
 php artisan migrate
-
+```
 (Optional: with seeders)
 
 php artisan migrate --seed
 7. Install frontend dependencies (optional)
+```bash
 npm install
 npm run dev
+```
 8. Start the server
+```bash
 php artisan serve
-
+```
 Then open:
-
+```
 http://127.0.0.1:8000
+```
